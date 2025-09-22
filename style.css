@@ -1,27 +1,29 @@
-<style>
 div.fixedheader {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 20%;
+  height: 180px;
   border: 3px solid #DE3E791;
-  background-color: #F5A0B8;
+  background-color: pink;
+  font-size: 175 px;
+  text-align: center;
+  text-color: #DE3E79;
 }
 
 div.spacerheader {
 	width: 100%;
-    height: 10%;
+    height: 150px;
     }
 
 div.spacer2 {
 	width:100%;
-    height: 40px;
+    height: 20px;
 }
 
 h1 {
 	text-align: center;
-	font-size: 100%;
+	font-size: 75px;
 	color: #DE3E79;
 }
 
@@ -32,4 +34,3 @@ h2 {
 p {
 	font-size: 14px;
 }
-</style>
