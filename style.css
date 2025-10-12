@@ -1,36 +1,167 @@
-div.fixedheader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 180px;
-  border: 3px solid #DE3E791;
-  background-color: pink;
-  font-size: 175 px;
-  text-align: center;
-  text-color: #DE3E79;
-}
-
-div.spacerheader {
-	width: 100%;
-    height: 150px;
-    }
-
-div.spacer2 {
-	width:100%;
-    height: 20px;
+body {
+    margin: 0;
+    padding-top: 60px;
+    font-family:"Lucida Handwriting";
 }
 
 h1 {
-	text-align: center;
-	font-size: 75px;
-	color: #DE3E79;
+    margin-top: 50px;
+    margin-left: 10px;
+    text-align: center;
+    color:  #F72885;
+    padding-left: 60px;
 }
 
 h2 {
-	text-align: center;
-	color: gray;
+    margin: 10px;
+    color:  #F72885;
+    text-align: center;
+    padding-left: 60px;
 }
+
 p {
-	font-size: 14px;
+    margin: 10px;
+    color:  #F72885;
+    text-indent: 10%;
+    font-size: 22px;
+    padding-left: 90px;
+}
+
+.header {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #FFB4BF;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.header li {
+    float: left;
+}
+
+.header li a {
+    display: block;
+    color: #F21C7C;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 40px;
+}
+
+.header li a:hover:not(.active) {
+    background-color: #CF0C64;
+    color: #FFB4BF;
+}
+
+.header li a.active {
+    background-color: #F72885;
+    color: white;
+}
+
+.sidebar {
+    position: fixed;
+    top:74px;
+    left: 0;
+    height: 100%;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 14px;
+    text-decoration: none;
+    font-size: 50px;
+    background-color: #FFB4BF;
+    align-items: center;
+
+}
+
+.material-symbols-outlined {
+    color: #F21C7C;
+}
+
+
+.image_container {
+    text-align: center;
+    align: center;
+    padding-left: 60px;
+}
+
+.image_container img {
+    width: 50%;
+    box-shadow: 0 4px 8px rgba(0 0 0 0.2)
+    padding-left: 60px;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    border: 14px solid #F21C7C;
+    max-width: 80vw;
+    max-height: 60vw;
+    margin: 20px auto;
+
+}
+
+.grid-item {
+    border: 6px solid #F21C7C;
+    aspect ratio: 1 / 1;
+    overflow: hidden;
+
+}
+
+.grid-item img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+
+}
+
+.grid-item:hover {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.table-container {
+    margin: 30px 425px;
+    color: #F72885;
+    padding-left: 60px;
+}
+
+table {
+    width: 100%
+    border-collapse: collapse;
+    padding-left: 60px;
+}
+
+th, td {
+    border: 1px purple;
+    text-align: center;
+    padding: 10px;
+}
+
+tr:nth-child(even) {
+    background-color: pink;
+}
+
+.list {
+    margin-left: 100px;
+    color:  #F72885;
+    padding-left: 135px;
+    font-size: 22px;
+}
+
+iframe {
+    display: block;
+    margin: 50px auto;
+
+}
+iframe:focus {
+    outline: none;
+    border: none;
 }
