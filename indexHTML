@@ -1,2 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Memory Game</title>
+
+    <link rel="stylesheet" href="CSSFinalProject.css">
+
+</head>
+
+<body>
+
 <p>test for image showing</p>
 <img src="KermitWindow.jpg" alt="Kermit Window" width="300" height="200">
+
+<h1>"Kermit" to Memory: Game</h1>
+
+<h3>Select two cards. Try to find matching pairs!</h3>
+
+<div class="score tracking">
+    <p id="tries">Tries: </p>
+    <p id="matches">Matches: 0/6</p>
+    <p id="highscore">High Score: </p>
+</div>
+
+<p id="message"></p>
+
+<button id="restart">Restart Game</button>
+
+<div id="parent" class="container"></div>
+
+<script src="JSFinalProject.js"></script>
+
+</body>
+</html>
